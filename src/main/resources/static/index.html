@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Boot App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-md max-w-md w-full text-center">
+        <h1 class="text-3xl font-bold text-green-600 mb-4">Spring Boot</h1>
+		<h2 th:text="${greeting}"></h2>
+        <p class="text-gray-600 mb-6">
+            Your application is up and running. This is a static <b>index.html</b> served from the resources folder.
+        </p>
+        <div class="space-y-3">
+            <a href="/api/hello" class="block w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded transition">
+                Test API Endpoint
+            </a>
+            <p class="text-sm text-gray-400 italic">March 2026 Edition</p>
+        </div>
+    </div>
+
+</body>
+</html>
